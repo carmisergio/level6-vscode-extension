@@ -1,0 +1,30 @@
+{
+  "name": "vscode-level6-assembly",
+  "displayName": "Level6 Assembly Language",
+  "description": "Language support for the Level6 Assembly language",
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carmisergio/vscode-level6-assembly.git"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "level6-assembly",
+      "aliases": ["Level6 Assembly", "level6-assembly"],
+      "extensions": ["l6s"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "level6-assembly",
+      "scopeName": "source.level6-assembly",
+      "path": "./syntaxes/level6-assembly.tmLanguage.json"
+    }]
+  }
+}
