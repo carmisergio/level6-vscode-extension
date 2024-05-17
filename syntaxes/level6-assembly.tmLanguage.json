@@ -24,11 +24,11 @@
 		},
 		{
 			"name": "keyword.mnemonic.level6-assembly",
-			"match": "\\b(?i)(nc|dec|neg|cpl|cl|clh|cmz|cmn|cad|sts|jmp|ent|lev|save|rstr|lb|lbf|lbt|lbc|lbs|aid|ldi|sdi|sid|ldr|str|srm|swr|cmr|add|sub|mul|div|or|xor|and|aid|sid|ldh|sth|cmh|orh|xoh|anh|llh|mtm|stm|ldb|stb|cmb|cmn|swb|lab|lnj|ldv|cmv|adv|mlv|blz|bgez|bez|bnez|bgz|blez|bodd|bevn|binc|bdec|b|nop|be|bne|bal|bage|bag|bale|bl|bge|bg|ble|rsu|bse|bct|bcf|bbt|bbf|biot|biof|bov|bnov|sol|scl|sal|dcl|sor|scr|sar|dcr|dol|dal|dor|dar|io|ioh|iold|hlt|mcl|rtt|rtcn|rtcf|wdtn|wdtf|brk|mmm|asd|vld|qoh|qot|dqh|dqa|rsc|rlq|ldt|acq|stt|sczd|sczq|sngd|sngq|sld|sst|scm|sad|ssb|sml|sdv|ssw|blez|bgez|sbez|sbnez|sbgz|sblez|sbl|sbge|sbe|sbne|sbg|sble|sbpe|sbnpe|sbse|sbnse|sbeu|sbneu)(?!:)\\b"
+			"match": "\\b(?i)(inc|dec|neg|cpl|cl|clh|cmz|cmn|cad|sts|jmp|ent|lev|save|rstr|lb|lbf|lbt|lbc|lbs|aid|ldi|sdi|sid|ldr|str|srm|swr|cmr|add|sub|mul|div|or|xor|and|aid|sid|ldh|sth|cmh|orh|xoh|anh|llh|mtm|stm|ldb|stb|cmb|cmn|swb|lab|lnj|ldv|cmv|adv|mlv|blz|bgez|bez|bnez|bgz|blez|bodd|bevn|binc|bdec|b|nop|be|bne|bal|bage|bag|bale|bl|bge|bg|ble|rsu|bse|bct|bcf|bbt|bbf|biot|biof|bov|bnov|sol|scl|sal|dcl|sor|scr|sar|dcr|dol|dal|dor|dar|io|ioh|iold|hlt|mcl|rtt|rtcn|rtcf|wdtn|wdtf|brk|mmm|asd|vld|qoh|qot|dqh|dqa|rsc|rlq|ldt|acq|stt|sczd|sczq|sngd|sngq|sld|sst|scm|sad|ssb|sml|sdv|ssw|blez|bgez|sbez|sbnez|sbgz|sblez|sbl|sbge|sbe|sbne|sbg|sble|sbpe|sbnpe|sbse|sbnse|sbeu|sbneu)(?!:)\\b"
 		},
 		{
 			"name": "entity.name.function.label.level6-assembly",
-			"match": "^\\s*[a-zA-Z0-9_]*[:]"
+			"match": "^\\s*[a-zA-Z][a-zA-Z0-9_]*[:]"
 		},
 		{
 			"name": "constant.numeric.hex.level6-assembly",
@@ -49,6 +49,10 @@
 		{
 			"name": "constant.language.register.base.level6-assembly",
 			"match": "(?<![\\w$])(?i)[$]B[1-7]\\b"
+		},
+		{
+			"name": "constant.language.register.modecontrol.level6-assembly",
+			"match": "(?<![\\w$])(?i)[$]M[1-7]\\b"
 		}
 
 	],
